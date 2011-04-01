@@ -185,7 +185,7 @@
             }
             
             var tableHeader = obj.find('div.fht_table_body table thead');
-            tableHeader.clone().appendTo('div.fht_fixed_header table');
+            tableHeader.clone().appendTo(obj.find('div.fht_fixed_header table'));
             obj.find('div.fht_table_body table').css({'margin-top':-(tableHeader.height())+'px'});
             
             if (options.footer && options.cloneHeaderToFooter) {
